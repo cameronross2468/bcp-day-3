@@ -12,13 +12,48 @@
     <script>
         var x = 100; //prompt('pick a number');
             
-                    if (x % 2 === 0) {
-                        console.log('x is even');
-                    }
-                    
-                    else {
-                        console.log('x is odd');
-                    }
+        // 1 - initialization
+        // 2 - condition
+        // 3 - post loop action
+
+        // One - Log even numbers only using the for loop
+        // for(var i = 0; i < x; i++) {
+        //     if (i % 2 === 0) {
+        //         console.log(i);
+        //    
+        //     }
+        // }
+
+        // Two - Log from 100 to 0
+        // for (var i=100; i >= 0; i--) {
+        //     if (i % 2 === 0) {
+        //         console.log(i, "is even.");
+        //     }
+        // }
+
+        // Three - Log 0 to 100, but log 'fizz' if div by 3;
+        // log 'buzz' if div by 5
+        // otherwise log number
+
+        for(var i = 0; i < x; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log('fizzbuzz');
+            }
+            
+            else if (i % 3 === 0) {
+                console.log('fizz');
+            }    
+            
+            else if  (i % 5 === 0) {
+                console.log('buzz');
+            }
+
+            else {
+                console.log(i);
+            }
+            
+        }
+
 
     </script>
 
